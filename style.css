@@ -1,0 +1,192 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+}
+
+@font-face {
+    font-family: "mahir-font";
+    src: url("Miama.ttf");
+}
+
+body {
+    background: rgb(17, 17, 17);
+    color: white;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Navbar */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(17, 17, 17);
+    z-index: 1000;
+}
+
+/* Logo */
+.left h3 {
+    margin-left: 190px;
+    font-size: 36px;
+    color: rgb(230, 83, 60);
+}
+
+/* Navbar Links */
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px;
+    font-weight: 400;
+    margin-right: 190px;
+}
+
+/* Home Button */
+.nav-btn {
+    background: rgb(230, 83, 60);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: rgba(230, 83, 60, 0.8);
+}
+
+.nav-gap {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-gap:hover {
+    color: #bbb;
+}
+
+/* Hero Section */
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 80px;
+    height: 100vh;
+}
+
+.left-content {
+    max-width: 50%;
+    margin-left: 190px;
+}
+
+.heading-text {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cool {
+    font-family: "mahir-font";
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-container {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    background: rgb(230, 83, 60);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: rgba(230, 83, 60, 0.8);
+}
+
+.right-content {
+    margin-right: 214px;
+    padding-left: 88px;
+}
+
+.image-home {
+    width: 349px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Info Boxes */
+.box-upper, .box-lower {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.box-upper {
+    top: 260px;
+    left: 1150px;
+}
+.box-upper h2{
+    font-size: 40px;
+}
+.box-upper p{
+    font-size: 13px;
+}
+.box-lower {
+    top: 500px;
+    /* right: 200px; */
+    left: 950px;
+    display: flex;
+    align-items: center;
+}
+.box-lower h2{
+    font-size: 24px;
+}
+.box-lower p{
+    font-size: 16px;
+}
+.curcle {
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+    width: 40px;  
+    height: 40px; 
+    display: block;
+ margin-right: 8px;
+    
+}
