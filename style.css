@@ -262,35 +262,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer Section */
 .footer {
     background: linear-gradient(to right, #222, #111);
@@ -357,3 +328,163 @@ body {
     color: rgba(255, 255, 255, 0.6);
     margin-top: 5px;
 }
+
+/* -------------------------------------------------------------------- */
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .head {
+        padding: 15px 40px;
+    }
+    
+    .left h3 {
+        margin-left: 0;
+        font-size: 28px;
+    }
+
+    .right-nav {
+        margin-right: 0;
+        gap: 15px;
+    }
+
+    .right-content {
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+    .left-content {
+        max-width: 60%;
+        margin-left: 40px;
+    }
+
+    .heading-text {
+        font-size: 50px;
+    }
+
+    .box-upper {
+        left: 70%;
+    }
+
+    .box-lower {
+        left: 50%;
+    }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 768px) {
+    /* Navbar */
+    .head {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left h3 {
+        font-size: 24px;
+        margin-left: 0;
+    }
+
+    .right-nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background: rgba(17, 17, 17, 0.9);
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .right-nav.active {
+        display: flex;
+    }
+
+    .nav-gap, .nav-btn {
+        font-size: 16px;
+    }
+
+    /* Hero Section */
+    .first {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .left-content {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .heading-text {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .btn-container {
+        justify-content: center;
+    }
+
+    .right-content {
+        margin-top: 20px;
+    }
+
+    .image-home {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Info Boxes */
+    .box-upper, .box-lower {
+        position: static;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Second Page */
+    .image-box-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .image-box {
+        width: 45%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer-logo {
+        font-size: 22px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .heading-text {
+        font-size: 32px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .image-box {
+        width: 100%;
+    }
+}
+
+
+
